@@ -1,0 +1,13 @@
+t=0:0.00001:0.1;
+x_t=5*cos(2*pi*100*t);
+plot(t,x_t);
+hold on;
+f_s=1.3*100;
+t_s=0:1/f_s:0.1;
+x_s=5*cos(2*pi*100*t_s);
+stem(t_s,x_s);
+hold off;
+xlabel('t');
+ylabel('Magnitude');
+title('Aliased signal along with input signal');
+legend('Input signal','Aliased signal');

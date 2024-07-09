@@ -1,0 +1,13 @@
+t=0:0.00001:0.1;
+f_s=200;
+t_s=0:1/f_s:0.1;
+x_t=5*cos(2*pi*100*t);
+plot(t,x_t);
+hold on;
+x_s=5*cos(2*pi*100*t_s);
+stem(t_s,x_s);
+hold off;
+xlabel('t');
+ylabel('Magnitude');
+title('Sampled signal');
+legend('Analog signal','Sampled signal');

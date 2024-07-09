@@ -1,0 +1,13 @@
+t=0:0.00001:3;
+x_t=5*sin(2*pi*t);
+subplot(3,1,1);
+plot(t,x_t);
+hold on;
+fs=20;
+ts=0:1/fs:3;
+x_s=5*sin(2*pi*ts);
+stem(ts,x_s);
+hold off;
+xlabel('t');
+ylabel('Ampli')
+subplot(3,1,2);
